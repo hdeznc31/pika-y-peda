@@ -186,3 +186,19 @@ margin-right:auto;
 .tabla-precios .precios span{
 color:#F2A65A;
 }
+
+.item span:first-child{
+flex:1;
+}
+
+.precios{
+min-width:120px;
+justify-content:space-between;
+}
+
+.precio{
+min-width:120px;
+text-align:right;
+color:#5B8A42;
+font-weight:bold;
+}
