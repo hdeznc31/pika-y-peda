@@ -1,0 +1,166 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Playfair Display',serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+background:#5B8A42;
+color:white;
+text-align:center;
+padding:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:500;
+font-size:18px;
+}
+
+nav a:hover{
+color:#F2A65A;
+}
+
+/* SECCIONES */
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+color:#5B8A42;
+margin-bottom:30px;
+text-align:center;
+}
+
+/* CARRUSEL */
+
+.slider{
+position:relative;
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.slide{
+width:100%;
+display:none;
+animation:fade 1s;
+}
+
+.slide.active{
+display:block;
+}
+
+@keyframes fade{
+from{opacity:0.4}
+to{opacity:1}
+}
+
+.prev,.next{
+
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:#5B8A42;
+color:white;
+border:none;
+font-size:28px;
+padding:10px 15px;
+cursor:pointer;
+border-radius:5px;
+
+}
+
+.prev{left:10px;}
+.next{right:10px;}
+
+.prev:hover,.next:hover{
+background:#F2A65A;
+}
+
+/* DOTS */
+
+.dots{
+text-align:center;
+margin-top:10px;
+}
+
+.dot{
+
+height:12px;
+width:12px;
+margin:0 5px;
+background:#bbb;
+display:inline-block;
+border-radius:50%;
+cursor:pointer;
+
+}
+
+.dot.active{
+background:#5B8A42;
+}
+
+/* MENU */
+
+.categoria{
+color:#F2A65A;
+margin-top:30px;
+margin-bottom:10px;
+font-size:22px;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid #ddd;
+padding:10px 0;
+}
+
+.precio{
+color:#5B8A42;
+font-weight:bold;
+}
+
+/* CONTACTO */
+
+#contacto{
+background:#5B8A42;
+color:white;
+text-align:center;
+padding:60px 20px;
+width:100%;
+max-width:100%;
+margin-top:40px;
+}
+
+#contacto h2{
+color:white;
+}
+
+/* FOOTER */
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+width:100%;
+}
