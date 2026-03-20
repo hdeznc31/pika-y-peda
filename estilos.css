@@ -103,7 +103,6 @@ margin-top:10px;
 }
 
 .dot{
-
 height:12px;
 width:12px;
 margin:0 5px;
@@ -111,7 +110,6 @@ background:#bbb;
 display:inline-block;
 border-radius:50%;
 cursor:pointer;
-
 }
 
 .dot.active{
@@ -130,8 +128,10 @@ font-size:22px;
 .item{
 display:flex;
 justify-content:space-between;
+align-items:center;
 border-bottom:1px solid #ddd;
 padding:10px 0;
+gap:10px; /* MÁS COMPACTO */
 }
 
 .precio{
@@ -165,9 +165,11 @@ padding:20px;
 width:100%;
 }
 
+/* PRECIOS */
+
 .precios{
 display:flex;
-gap:25px;
+gap:12px; /* MÁS JUNTOS */
 color:#5B8A42;
 font-weight:bold;
 }
@@ -201,4 +203,23 @@ min-width:120px;
 text-align:right;
 color:#5B8A42;
 font-weight:bold;
+}
+
+/* 📱 AJUSTE FINO PARA CELULAR (SIN ROMPER EL DISEÑO) */
+
+@media (max-width: 600px){
+
+.item{
+gap:8px;
+}
+
+.precios{
+gap:8px;
+min-width:90px;
+}
+
+.precio{
+min-width:90px;
+}
+
 }
