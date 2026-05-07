@@ -180,21 +180,23 @@ h2{
     column-gap: 10px;
     padding-right: 4px;
     text-align: center;
-    color: #39FF14;
-    font-weight: 900;
-    text-shadow: 0 0 7px #39FF14, 0 0 14px #39FF14, 0 0 28px #39FF14;
 }
 
-.precio{
+/* Forzamos estilo a los span dentro de precios y a la clase .precio */
+.precios span, 
+.precios .precio, 
+.precio {
+    color: #39FF14;
+    font-weight: 900;
+    font-size: 20px;
+    text-shadow: 
+        0 0 7px #39FF14, 
+        0 0 14px #39FF14, 
+        0 0 28px #39FF14;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 75px;
-    height: 28px;
-    color: #39FF14;
-    font-weight: 900;
-    font-size: 20px;
-    text-shadow: 0 0 7px #39FF14, 0 0 14px #39FF14, 0 0 28px #39FF14;
 }
 
 /* TABLA PRECIOS (Encabezados 1L y 1/2L) */
@@ -249,7 +251,7 @@ footer{
     border-top: 1px solid #39FF14;
 }
 
-/* MEDIA QUERY - CELULAR */
+/* CELULAR - CORRECCIÓN DEFINITIVA DE TAMAÑOS */
 @media (max-width: 600px){
     header h1{
         font-size: 32px;
@@ -267,29 +269,29 @@ footer{
     }
 
     .item span:first-child{
-        font-size: 14px; /* Un poco más legible */
+        font-size: 13px;
     }
 
-    /* Corrección de tamaños desiguales en móvil */
-    .precios{
-        grid-template-columns: 65px 65px;
+    .precios {
+        grid-template-columns: 60px 60px;
         column-gap: 8px;
-        font-size: 18px !important; /* Unificamos tamaño */
     }
 
-    .precio{
-        width: 65px;
-        min-width: 65px;
-        font-size: 18px !important; /* Unificamos tamaño con la columna izq */
+    /* Forzamos IGUALDAD absoluta en móviles para ambos precios */
+    .precios span, 
+    .precios .precio,
+    .precio {
+        font-size: 18px !important; 
+        font-weight: 900 !important;
+        width: 60px !important;
+        text-shadow:
+            0 0 7px #39FF14,
+            0 0 14px #39FF14,
+            0 0 28px #39FF14;
     }
 
-    h2{
-        font-size: 30px;
-    }
-
-    .categoria{
-        font-size: 24px;
-    }
+    h2{ font-size: 30px; }
+    .categoria{ font-size: 24px; }
 }
 
 /* BOTON WHATSAPP */
