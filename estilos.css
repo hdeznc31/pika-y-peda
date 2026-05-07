@@ -184,8 +184,9 @@ padding-right:10px;
 display:grid;
 grid-template-columns:60px 60px;
 justify-content:end;
+align-items:center;
 column-gap:10px;
-padding-right:10px;
+padding-right:4px;
 text-align:center;
 
 color:#39FF14;
@@ -198,11 +199,18 @@ text-shadow:
 }
 
 .precio{
+display:flex;
+justify-content:center;
+align-items:center;
+
 width:60px;
-text-align:center;
+height:28px;
+
 color:#39FF14;
 font-weight:900;
 font-size:20px;
+
+font-variant-numeric: tabular-nums;
 
 text-shadow:
 0 0 7px #39FF14,
@@ -262,10 +270,12 @@ padding-right:10px;
 color:#FF8C00;
 font-size:20px;
 font-weight:bold;
+
 text-shadow:
 0 0 5px #FF8C00,
 0 0 10px #FF8C00;
 }
+
 /* CELULAR */
 
 @media (max-width: 600px){
@@ -301,17 +311,33 @@ padding-right:5px;
 display:grid;
 grid-template-columns:50px 50px;
 justify-content:end;
+align-items:center;
 column-gap:8px;
 padding-right:5px;
 text-align:center;
+
+color:#39FF14;
+font-weight:900;
+
+text-shadow:
+0 0 7px #39FF14,
+0 0 14px #39FF14,
+0 0 28px #39FF14;
 }
 
 .precio{
+display:flex;
+justify-content:center;
+align-items:center;
+
 width:50px;
-text-align:center;
+height:24px;
+
 color:#39FF14;
 font-weight:900;
 font-size:16px;
+
+font-variant-numeric: tabular-nums;
 
 text-shadow:
 0 0 7px #39FF14,
